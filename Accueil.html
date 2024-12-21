@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes de Cuisine</title>
+    <style>
+        /* Global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+
+        /* En-tête avec une image de fond */
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x600?text=Recettes+Cuisine'); /* Remplace par une vraie image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .hero .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section des catégories */
+        .categories {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .categories h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .category-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .category-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .category-card h3 {
+            font-size: 1.8rem;
+            margin: 20px 0;
+        }
+
+        .category-card p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .category-card .btn {
+            margin-top: 20px;
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .category-card .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        /* Section des témoignages */
+        .testimonials {
+            background-color: #f2f2f2;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 40%;
+            margin: 10px auto;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête avec une image de fond -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur notre site de Recettes</h1>
+            <p>Découvrez des plats délicieux, traditionnels et modernes pour chaque occasion !</p>
+            <a href="1.html" class="btn">Explorer les Recettes Traditionnelles</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="1.html">Recettes Traditionnelles</a></li>
+            <li><a href="2.html">Recettes Communes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section de présentation des catégories -->
+    <section class="categories">
+        <h2>Explorez nos catégories de recettes</h2>
+        <div class="category-list">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200?text=Traditionnelle" alt="Recettes Traditionnelles">
+                <h3>Recettes Traditionnelles</h3>
+                <p>Des plats intemporels qui honorent la cuisine de nos ancêtres.</p>
+                <a href="1.html" class="btn">Voir les recettes</a>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200?text=Commune" alt="Recettes Communes">
+                <h3>Recettes Communes</h3>
+                <p>Des recettes simples et savoureuses pour tous les jours.</p>
+                <a href="2.html" class="btn">Voir les recettes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de témoignages (facultatif, ajout d'une touche personnelle) -->
+    <section class="testimonials">
+        <h2>Ce que nos utilisateurs disent</h2>
+        <div class="testimonial-card">
+            <p>"Les recettes sont incroyables ! J'ai adoré la ratatouille provençale, elle a ravivé de bons souvenirs." — Claire</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Facile à suivre et délicieuses ! La salade César est devenue un classique chez nous." — Marc</p>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Recettes Délicieuses - Tous droits réservés</p>
+        <p>Créé avec ❤️ pour les passionnés de cuisine.</p>
+    </footer>
+
+</body>
+</html>
+
+   
